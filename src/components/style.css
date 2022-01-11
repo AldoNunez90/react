@@ -1,0 +1,44 @@
+*{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+}
+
+ul {
+    list-style: none !important;
+}
+a {
+    text-decoration: none;
+    color: unset;
+}
+
+.itemsNavPrincipal{
+    margin: 0 10px;
+    font-weight: bold;
+}
+.itemsNavPrincipal :hover {
+    color: white;
+
+}
+.logoPrincipal {
+    display: flex;
+    align-items: center;
+}
+.imgLogo{
+    height: 50px;
+    width: 52px;
+    border-radius: 5px;
+    margin: 5px 5px 0px 5px;
+}
+.navBarHome {
+    display: flex;
+    justify-content: space-evenly;
+    background-color: hsla(27, 100%, 50%, 0.36);
+}
+
+.listaNav {
+    display: flex;
+    flex-direction: row;
+
+    justify-content: space-evenly;
+}
+
