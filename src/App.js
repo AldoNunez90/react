@@ -1,8 +1,8 @@
-import NavBar from './components/NavBar';
-import './components/style.css'
+import NavBar from './components/NavBar/NavBar';
+import './components/NavBar/style.css'
 function App() {
   return (
-    NavBar()
+    <NavBar />
   );
 }
 
