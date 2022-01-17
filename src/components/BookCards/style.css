@@ -1,0 +1,34 @@
+.cardsContainer {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    background-color: white;
+    margin-top: 5vh;
+}
+ .bookCardItem {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 25%;
+    border-right: black solid;
+ }
+
+.imgCards {
+    height: auto;
+    width: 10vw;
+}
+.titleCards, .priceCards, .authorCards {
+    font-size: 3vh;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    margin: 1vh;
+}
+
+.imgCardsContainer {
+    height: 30vh;
+    margin-top: 2vh;
+    display: flex;
+   
+}

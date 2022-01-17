@@ -1,0 +1,89 @@
+*{
+    font-family: 'Signika Negative', sans-serif;
+    margin: unset;
+}
+
+ul {
+    list-style: none !important;
+}
+
+a {
+    text-decoration: none;
+    color: unset;
+    padding: 5px;
+    font-size: larger;
+}
+
+.itemsNavPrincipal{
+    margin: 0 10px;
+    font-weight: bold;
+    padding: 5px;
+    border-radius: 10px;
+   padding: 6px;
+    
+}
+
+.itemsNavPrincipal :hover {
+  
+    color: hsl(14deg 100% 64%);
+    background-color: black;
+    border-radius: 10px;
+    padding: 5px;
+    font-weight: normal;
+  
+}
+.logoContainer {
+    margin-left: 4vw;
+  
+}
+.logoPricipal {
+    height: 6vh;
+    margin-top: 5px;
+}
+body {
+    background-color: hsl(14deg 100% 64%);
+    
+}
+.navBarHome {
+    display: flex;
+    justify-content: space-between;
+    background-color: white;
+    align-items: center;
+    margin-top: 8vh;
+}
+.app {
+    width: 95%;
+    position: relative;
+    left: 50%;
+    transform: translate(-50%);
+}
+.navPrincipal{
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%);
+}
+.listaNav {
+    display: flex;
+    padding: unset;
+}
+
+.navLoginCart{
+    display: flex;
+    margin-right: 4vw;
+    justify-content: space-around;
+    width: 10%;
+    align-items: center;
+}
+
+.loginText {
+    padding: 10px;
+    background-color: rgb(226, 226, 226);
+    border-radius: 40px;
+}
+
+.loginContainer :hover {
+    background-color: black ;
+    color: hsl(14deg 100% 64%);
+    border-radius: 40px;
+    padding: 10px;
+}

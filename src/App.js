@@ -1,8 +1,12 @@
+import ItemListContainer from './components/ItemList/ItemListContainer';
 import NavBar from './components/NavBar/NavBar';
-import './components/NavBar/style.css'
+
 function App() {
   return (
-    <NavBar />
+    <div className='app'>
+      <NavBar />
+      <ItemListContainer />
+    </div>
   );
 }
 

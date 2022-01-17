@@ -1,3 +1,7 @@
+import CartWidget from '../CartWidget/CartWidget';
+import './styles.css';
+
+
 function NavBar() {
     const eBooks = () => {
         console.log('Libros digitales')
@@ -14,7 +18,7 @@ function NavBar() {
     return (
 
         <nav className='navBarHome'>
-            <div className='logoPrincipal'><a href={require('../../index')}><span className='tituloLogo'>Mort</span></a></div>
+            <div className='logoContainer'><a href={require('../../index')}><img className='logoPricipal' src={require('../../imagenes/logoFirma.png')} /></a></div>
             <div className='navPrincipal'>
                 <ul className='listaNav'>
                     <li onClick={eBooks} className='itemsNavPrincipal'><a href="#">E-Books</a></li>
@@ -23,9 +27,9 @@ function NavBar() {
                     <li onClick={contacto} className='itemsNavPrincipal'><a href="#">Contacto</a></li>
                 </ul>
             </div>
-            <div className='navLogin'>
-                <a href='#' className='loginText'>login</a> 
-                <a href='#'><img className='cartLogo' src={require('../../imagenes/cartLogo.png')} /></a>
+            <div className='navLoginCart'>
+                <div className='loginContainer'><a href='#' className='loginText' >login</a></div>
+                <div className='cartWidget'><CartWidget /></div>
             </div>
         </nav>
     )
