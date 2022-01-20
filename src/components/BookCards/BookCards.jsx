@@ -1,10 +1,10 @@
 import './style.css'
 
-function BookCards ({img, title, price, author}) {
+function BookCards ({img, title, price, author, stock}) {
 return (
     <div className='bookCardItem'>
         <div className='imgCardsContainer'>
-            <img  className='imgCards' src={img}/>
+            <img  className='imgCards' alt={title} src={img}/>
         </div>
         <div className='desiptionCards'>   
             <p className='titleCards' >{title}</p>

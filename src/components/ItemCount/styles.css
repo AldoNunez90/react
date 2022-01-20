@@ -1,0 +1,36 @@
+.itemCountContainer {
+    width: 12vw;
+    display: flex;
+    margin: auto;
+    margin-top: 5vh;
+}
+
+.buttonSub, .buttonAdd{
+    border: none;
+    background: white;
+    position: relative;
+    z-index: 100;
+    height: 3vh;
+    color: #3ab7bb;
+    font-size: large;
+
+}
+.buttonSub{
+    transform: translate(26px, 2px);
+}
+
+
+.buttonAdd{
+    transform: translate(-26px, 2px);
+}
+
+.numContador{
+    text-align: center;
+    border: solid cadetblue;
+    height: 4vh;
+    border-radius: 2px;
+    z-index: 10;
+    width: 100%;
+    background-color: white;
+}
+
