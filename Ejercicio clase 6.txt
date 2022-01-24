@@ -1,0 +1,25 @@
+En el .map debe ponerse una prop "key"
+
+return (
+	<div>
+	{array.map((newArray)=> (
+	<Item key={producto.id} product={product} />
+	))}
+	</div>
+	);
+
+---------------------------
+
+Imagen local: Debe importarse
+
+---------------------------
+
+Reemplazar: 
+
+
+bookcards: Hacer el mapeo
+
+ItemListcContainer: traer el bookcard y hacer el resto del div
+
+Dejar importado en app.js
+

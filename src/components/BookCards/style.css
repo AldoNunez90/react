@@ -12,6 +12,7 @@
     align-items: center;
     width: 25%;
     border-right: black solid;
+    padding: 10px;
  }
 
 .imgCards {
@@ -19,7 +20,7 @@
     width: 10vw;
 }
 .titleCards, .priceCards, .authorCards {
-    font-size: 3vh;
+    font-weight: lighter;
     text-align: center;
     display: flex;
     flex-direction: column;
