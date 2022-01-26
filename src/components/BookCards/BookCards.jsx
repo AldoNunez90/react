@@ -11,7 +11,7 @@ const BookCards = ({products})=> {
           <h2 className='titleCards'>{products.title}</h2>
           <h4 className='authorCards'>{products.author}</h4>
           <h4 className='priceCards'>$ {products.price}</h4>
-          <ItemCount stock= {products.stock} initial= {1} />
+          <button>Detalles</button>
         </div>
       );
     };

@@ -1,0 +1,39 @@
+
+.detailsContainer {
+    width: 90%;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%);
+   
+}
+
+.detailsBox {
+    display: flex;
+    flex-direction: row;
+    margin: 5vh;
+    padding: 10vh;
+    background-color: rgba(240, 255, 255, 0.568);
+}
+
+.detailsProducts {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.imgDetails {
+    height: auto;
+    width: 10vw;
+}
+
+.detailsText {
+    padding: 3vh;
+    background-color: rgba(240, 255, 255, 0.322);
+}
+
+.priceDetails {
+    margin: 10px;
+    background-color: azure;
+    padding: 5px;
+    border-radius: 5px;
+}

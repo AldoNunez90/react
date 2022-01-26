@@ -3,28 +3,28 @@ import "./styles.css"
 
 function ItemCount ({stock, initial}){
 
-const [cantidad, setCantidad] = React.useState(initial)
+const [amount, setAmount] = React.useState(initial)
 
-const restar = ()=> {
-    if (cantidad === initial){
-        cantidad (1)
+const subtract = ()=> {
+    if (amount === initial){
+        amount (1)
     } else {
-        setCantidad (cantidad - 1)
+        setAmount (amount - 1)
     }
 }
 
-const sumar = ()=> {
-    if(cantidad === stock){
-        cantidad (stock)
+const addAmount = ()=> {
+    if(amount === stock){
+        amount (stock)
     } else{
-        setCantidad (cantidad + 1)
+        setAmount (amount + 1)
     }
 }
     return(
         <div className="itemCountContainer">
-            <button onClick={restar} className="buttonSub">-</button>
-            <h4 className="numContador">{cantidad}</h4>
-            <button onClick={sumar} className="buttonAdd">+</button>
+            <button onClick={subtract} className="buttonSub">-</button>
+            <h4 className="numContador">{amount}</h4>
+            <button onClick={addAmount} className="buttonAdd">+</button>
         </div>
     );
 }

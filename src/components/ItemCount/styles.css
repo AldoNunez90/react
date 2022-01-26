@@ -1,7 +1,6 @@
 .itemCountContainer {
     width: 12vw;
     display: flex;
-    margin: auto;
 }
 
 .buttonSub, .buttonAdd{

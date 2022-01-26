@@ -25,18 +25,17 @@ a {
 
 .itemsNavPrincipal :hover {
   
-    color: hsl(14deg 100% 64%);
-    background-color: black;
+    color: rgb(112, 32, 0);
     border-radius: 10px;
     padding: 5px;
-    font-weight: normal;
+   
   
 }
 .logoContainer {
     margin-left: 4vw;
   
 }
-.logoPricipal {
+.principalLogo {
     height: 6vh;
     margin-top: 5px;
 }
@@ -47,9 +46,11 @@ body {
 .navBarHome {
     display: flex;
     justify-content: space-between;
-    background-color: white;
+    background-color: rgba(255, 255, 255, 0.5);
     align-items: center;
-    margin-top: 8vh;
+    border-top: 8px solid transparent;
+    border-bottom: 8px solid transparent;
+    border-radius: 5px
 }
 .app {
     width: 95%;
@@ -57,12 +58,12 @@ body {
     left: 50%;
     transform: translate(-50%);
 }
-.navPrincipal{
+.principalNav{
     position: absolute;
     left: 50%;
     transform: translate(-50%);
 }
-.listaNav {
+.navList {
     display: flex;
     padding: unset;
 }
@@ -82,8 +83,7 @@ body {
 }
 
 .loginContainer :hover {
-    background-color: black ;
-    color: hsl(14deg 100% 64%);
+    color: rgb(112, 32, 0);
     border-radius: 40px;
     padding: 10px;
 }

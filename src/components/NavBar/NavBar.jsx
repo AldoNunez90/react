@@ -18,9 +18,9 @@ function NavBar() {
     return (
 
         <nav className='navBarHome'>
-            <div className='logoContainer'><a href={require('../../index')}><img className='logoPricipal' src={require('../../imagenes/logoFirma.png')} /></a></div>
-            <div className='navPrincipal'>
-                <ul className='listaNav'>
+            <div className='logoContainer'><a href={require('../../index')}><img className='principalLogo' src={require('../../imagenes/logoFirma.png')} /></a></div>
+            <div className='principalNav'>
+                <ul className='navList'>
                     <li onClick={eBooks} className='itemsNavPrincipal'><a href="#">E-Books</a></li>
                     <li onClick={papel} className='itemsNavPrincipal'><a href="#">Papel</a></li>
                     <li onClick={novedades} className='itemsNavPrincipal'><a href="#">Novedades</a></li>
