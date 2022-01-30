@@ -16,7 +16,7 @@ function NavBar() {
         console.log('Novedades')
     };
     return (
-
+        
         <nav className='navBarHome'>
             <div className='logoContainer'><a href={require('../../index')}><img className='principalLogo' src={require('../../imagenes/logoFirma.png')} /></a></div>
             <div className='principalNav'>

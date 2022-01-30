@@ -30,7 +30,10 @@
     padding: 3vh;
     background-color: rgba(240, 255, 255, 0.322);
 }
+h2 {
 
+    font-weight: normal !important;
+}
 .priceDetails {
     margin: 10px;
     background-color: azure;

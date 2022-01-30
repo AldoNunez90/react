@@ -1,6 +1,5 @@
 import { Oval } from 'react-loader-spinner'
 import "../../../node_modules/react-loader-spinner/dist/loader/css/react-spinner-loader.css";
-import ProductList from '../Item/Item'
 import { useEffect } from "react";
 import { useState } from "react";
 import CardsDetails from './CardsDetails';
@@ -8,32 +7,40 @@ import CardsDetails from './CardsDetails';
 
 function ItemDetails () {
 
-    const [products, setProducts] = useState([])
+    const [details, setDetails] = useState([])
+    const [errors, setErrors] = useState(null)
     const [loading, setLoading] = useState(false)
 
-    const getProducts = () => {
-        return new Promise((resolve, reject) => {
-          setTimeout(() => resolve(ProductList), 2000);
-        })}
-
+    
     useEffect (()=>{
+      const getProducts = async ()=>{
+        const getProductDetails = "http://localhost:3001/productList"
         setLoading(true)
-        getProducts()
-        .then((response)=> setProducts(response))
-        .catch((error)=> console.log(error))
-        .finally(()=> setLoading(false))
+        try{
+          const response = await fetch(getProductDetails);
+          const data = await response.json();
+          setDetails(data)
+        } catch(error){setErrors(error)}
+        finally{setLoading(false)}
+      };
+      getProducts()
     }, [])
-
-
-    return (
+    if (errors) {
+      return <p>Hubo un error</p>
+    } else {
+      
+      console.log(details)
+      return (
         <div>
           {loading ? (<div className="ovalLoading"><Oval color="blue" height={80} width={80} /></div>) :
             (
               <div className="detailsContainer">
-                {products.map((product) => <CardsDetails key={product.id} products={product} />)}
+                {details.map((product) => <CardsDetails key={product.id} products={product} />)}
               </div>
             )}
         </div>)
+}
+
 }
 
 export default ItemDetails
