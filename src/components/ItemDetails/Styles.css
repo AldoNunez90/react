@@ -1,10 +1,11 @@
 
+.detailsHero {
+    display: flex;
+    justify-content: center;
+}
+
 .detailsContainer {
     width: 90%;
-    position: absolute;
-    left: 50%;
-    transform: translate(-50%);
-   
 }
 
 .detailsBox {

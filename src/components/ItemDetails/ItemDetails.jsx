@@ -3,6 +3,7 @@ import "../../../node_modules/react-loader-spinner/dist/loader/css/react-spinner
 import { useEffect } from "react";
 import { useState } from "react";
 import CardsDetails from './CardsDetails';
+import { useParams } from 'react-router-dom';
 
 
 function ItemDetails () {
@@ -11,10 +12,11 @@ function ItemDetails () {
     const [errors, setErrors] = useState(null)
     const [loading, setLoading] = useState(false)
 
-    
+    const {id} = useParams();
+   
     useEffect (()=>{
       const getProducts = async ()=>{
-        const getProductDetails = "http://localhost:3001/productList"
+        const getProductDetails = `http://localhost:3001/productList/${id}`
         setLoading(true)
         try{
           const response = await fetch(getProductDetails);
@@ -26,16 +28,14 @@ function ItemDetails () {
       getProducts()
     }, [])
     if (errors) {
-      return <p>Hubo un error</p>
+      return <p>Hubo un error</p>;
     } else {
-      
-      console.log(details)
       return (
-        <div>
+        <div className='detailsHero'>
           {loading ? (<div className="ovalLoading"><Oval color="blue" height={80} width={80} /></div>) :
             (
               <div className="detailsContainer">
-                {details.map((product) => <CardsDetails key={product.id} products={product} />)}
+               <CardsDetails key={details.id} products={details} />
               </div>
             )}
         </div>)

@@ -18,6 +18,7 @@
     border: solid transparent;
     border-radius: 5px;
     background-color: rgba(240, 255, 255, 0.507);
+    margin-bottom: 5vh;
 }
 
 
@@ -38,4 +39,21 @@
     margin-top: 2vh;
     display: flex;
    
+}
+.btnContainer{
+    height: 8vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.detailsBtn {
+    border: none;
+    border-radius: 5px;
+    padding: 4px;
+    height: 5vh;
+}
+
+.detailsBtn:hover {
+    padding: 6px;
+    font-size: 2.5vh;
 }

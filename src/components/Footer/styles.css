@@ -1,0 +1,12 @@
+.footerContainer {
+    background-color: rgba(255, 255, 255, 0.5);
+    border-radius: 5px;
+}
+
+.footerList {
+    color: black;
+    display: flex;
+    justify-content: space-evenly;
+    height: 10vh;
+    align-items: center;
+}
