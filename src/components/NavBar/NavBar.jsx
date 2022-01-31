@@ -16,7 +16,7 @@ function NavBar() {
       <div className="principalNav">
         <ul className="navList">
           <li className="itemsNavPrincipal">
-            <Link to="/">Novedades</Link>
+            <Link to="categories">Categorías</Link>
           </li>
           <li className="itemsNavPrincipal">
             <Link to="libros">Libros</Link>
@@ -25,7 +25,7 @@ function NavBar() {
             <Link to="products">Nosotros</Link>
           </li>
           <li className="itemsNavPrincipal">
-            <Link to="/">Contacto</Link>
+            <Link to="contacts">Contacto</Link>
           </li>
         </ul>
       </div>

@@ -1,0 +1,16 @@
+.carousel-status{
+    display: none;
+}
+
+.thumbs {
+    display: none;
+}
+
+.homeContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 3vh;
+    margin-bottom: 3vh;
+
+}

@@ -1,5 +1,13 @@
+import CarouselHome from "../components/Carousel/Carousel";
+import ItemListHome from "../components/ItemList/ItemListHome";
+
 const HomePage = ()=> {
-   return <div><h1>Home</h1></div>
+   return (
+      <div className="homeContainer">
+         <CarouselHome />
+         <ItemListHome />
+      </div>
+   );
 }
 
 export default HomePage
