@@ -12,6 +12,7 @@ const CardsDetails = ({products})=> {
           <ItemCount stock= {products.stock} initial= {1} />
             </div>
             <div className='detailsText'>
+              <h1>{products.title}</h1>
                 <h2>{products.details}</h2>
             </div>
         </div>

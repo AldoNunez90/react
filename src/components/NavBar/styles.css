@@ -92,7 +92,8 @@ body {
 }
 
 .notFoundContainer{ 
- text-align: center;
+display: flex;
+justify-content: center;
 }
 .notFound {
     width: 50%;
@@ -100,4 +101,14 @@ body {
     border: none;
    margin: 1vh;
     
+}
+
+.toHomeBtn {
+position: absolute;
+top: 75%;
+border: black solid 2px;
+border-radius:8px;
+background-color: hsl(14deg 100% 64%);
+padding: 2vh;
+color: white;
 }
