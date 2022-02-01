@@ -2,7 +2,7 @@
   "productList": [
         {
             "id": 1,
-            "img": "https://picsum.photos/200/300?random=1",
+            "img": "LasTresHermanas.jpg",
             "title": "Las Tres Hermanas",
             "price": 1200,
             "author": "Header Morris",
@@ -11,7 +11,7 @@
         },
         {
             "id": 2,
-            "img": "https://picsum.photos/200/300?random=2",
+            "img": "ellibrodetulibro.png",
             "title": "El libro de tu libro",
             "price": 1400,
             "author": "Angie Sammartino",
@@ -20,7 +20,7 @@
         },
         {
             "id": 3,
-            "img": "https://picsum.photos/200/300?random=3",
+            "img": "laVillaDeTelas.png",
             "title": "La villa de telas",
             "price": 1500,
             "author": "Anne Jacobs",
@@ -29,7 +29,7 @@
         },
         {
             "id": 4,
-            "img": "https://picsum.photos/200/300?random=4",
+            "img": "sapiens.png",
             "title": "Sapiens",
             "price": 900,
             "author": "Yuval Noah Harari",

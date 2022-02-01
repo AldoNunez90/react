@@ -3,6 +3,8 @@
     border-radius: 5px;
     padding: 4px;
     height: 5vh;
+    width: 6vw;
+    margin-left: 7vw;
 }
 
 .formContact{
@@ -13,15 +15,21 @@
 
 .formContainer{
     display: flex;
-    justify-content: center;
+    justify-content: left;
+}
+
+label {
+    padding: 0.5vh;
 }
 
 #message {
     height: 10vh;
+
 }
 input {
     border: none;
     border-radius: 5px;
     padding: 1vh;
-    margin: 1vh;
+    margin: 0.5vh;
+    width: 20vw;
 }
