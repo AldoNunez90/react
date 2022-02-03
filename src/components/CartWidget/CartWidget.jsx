@@ -1,9 +1,17 @@
-import "./styles.css"
+import { Link } from "react-router-dom";
+import "./styles.css";
 
-const CartWidget = ()=> {
-    return (
-            <a href='#'><img className='cartLogo' alt="Logo de Carrito" src={require('../../imagenes/cartLogo.png')} /></a>
-    )
-}
+const CartWidget = () => {
+  return (
+    <Link to="carrito">
+      <img
+        className="cartLogo"
+        alt="Logo de Carrito"
+        src={require("../../imagenes/cartLogo.png")}
+        />
+    </Link>
+   
+  );
+};
 
-export default CartWidget
+export default CartWidget;

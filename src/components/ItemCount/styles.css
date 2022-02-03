@@ -34,3 +34,14 @@
     background-color: white;
 }
 
+.stockContainer{
+    display: flex;
+    justify-content: center;
+    margin-top: 2vh;
+}
+
+.stockDetail{
+    background-color: whitesmoke;
+    padding: 1vh;
+    border-radius: 5px
+}

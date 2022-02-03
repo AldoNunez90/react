@@ -6,6 +6,7 @@ import Footer from "./components/Footer/Footer";
 import ProductDetailsPage from "./pages/ProductDetailsPage";
 import NotFoundPage from "./pages/NotFoundPage";
 import ContactPage from "./pages/ContactPage"
+import CarritoPage from "./pages/CarritoPage";
 
 
 function App() {
@@ -20,6 +21,7 @@ function App() {
             <Route path=":id" element={<ProductDetailsPage />} />
           </Route>
           <Route path="contacts" element={<ContactPage/>} />
+          <Route path="carrito" element={<CarritoPage/>} />
           <Route path='*' element={<NotFoundPage />}/>
           </Route>
       </Routes>

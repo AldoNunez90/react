@@ -41,3 +41,10 @@ h2 {
     padding: 5px;
     border-radius: 5px;
 }
+
+.addToCartBtn{
+    margin-top: 2vh;
+    background-color: whitesmoke;
+    border: none;
+    border-radius: 5px;
+}

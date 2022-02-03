@@ -11,10 +11,8 @@ function ItemDetails () {
     const [details, setDetails] = useState([])
     const [errors, setErrors] = useState(null)
     const [loading, setLoading] = useState(false)
-
-    
     const {id} = useParams();
-  
+   
     useEffect (()=>{
         const getProducts = async ()=>{
         setLoading(true)
@@ -28,6 +26,7 @@ function ItemDetails () {
       };
       getProducts()
     }, [])
+
     if(loading){
       return <div className="ovalLoading"><Oval color="black" height={80} width={80} /></div>
     } else if (errors) {
